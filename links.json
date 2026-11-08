@@ -1,0 +1,90 @@
+{
+  "project": "KAFV 수산 워크스테이션",
+  "release": "v1.0",
+  "design_master": "수산_워크스테이션_정보_안내판.png · 사용자 승인 PASS",
+  "date": "2026-11-07",
+  "source": "User-provided GitHub Pages URLs and UI screenshots",
+  "external_site_status": "제3·4·5차시 사용자 시연 화면 확인. 수산앱 5종의 라이브 연결은 배포 후 브라우저에서 재검수 필요.",
+  "services": [
+    {
+      "id": "marketing",
+      "category": "education",
+      "label": "수산물 마케팅 온라인 교재",
+      "url": "https://jongcheon-kim.github.io/kafv-fishing-village-consultant/",
+      "icon": "📣",
+      "note": "수산물 마케팅의 기초와 현장 적용",
+      "qr_poster": "qr/marketing_poster.png",
+      "qr_mobile": "qr/marketing_mobile.png"
+    },
+    {
+      "id": "quality",
+      "category": "education",
+      "label": "수산물 품질·유통관리 온라인 교재",
+      "url": "https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/",
+      "icon": "📋",
+      "note": "품질·입고·저온 유통을 배우는 교재",
+      "qr_poster": "qr/quality_poster.png",
+      "qr_mobile": "qr/quality_mobile.png"
+    },
+    {
+      "id": "customer",
+      "category": "education",
+      "label": "고객응대·판매서비스 및 클레임 관리 온라인 교재",
+      "url": "https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/",
+      "icon": "🎮",
+      "note": "고객응대와 판매를 체험하는 RPG 교재",
+      "qr_poster": "qr/customer_poster.png",
+      "qr_mobile": "qr/customer_mobile.png"
+    },
+    {
+      "id": "tourism",
+      "category": "app",
+      "label": "어촌관광정보 앱",
+      "url": "https://jongcheon-kim.github.io/kafv-fishing-village-tourism/",
+      "icon": "🧭",
+      "note": "어촌 및 주변 관광정보",
+      "qr_poster": "qr/tourism_poster.png",
+      "qr_mobile": "qr/tourism_mobile.png"
+    },
+    {
+      "id": "company",
+      "category": "app",
+      "label": "수산기업정보 AI",
+      "url": "https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/",
+      "icon": "🏢",
+      "note": "수산기업 및 산업정보",
+      "qr_poster": "qr/company_poster.png",
+      "qr_mobile": "qr/company_mobile.png"
+    },
+    {
+      "id": "price",
+      "category": "app",
+      "label": "수산물 가격정보 AI",
+      "url": "https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/",
+      "icon": "📈",
+      "note": "시장·가격 정보 검색",
+      "qr_poster": "qr/price_poster.png",
+      "qr_mobile": "qr/price_mobile.png"
+    },
+    {
+      "id": "direct",
+      "category": "app",
+      "label": "수산자원직불제 AI",
+      "url": "https://jongcheon-kim.github.io/fisheries-direct-payment-ai/",
+      "icon": "🐟",
+      "note": "직불제 신청 및 제도 안내",
+      "qr_poster": "qr/direct_poster.png",
+      "qr_mobile": "qr/direct_mobile.png"
+    },
+    {
+      "id": "dictionary",
+      "category": "app",
+      "label": "수산물사전",
+      "url": "https://jongcheon-kim.github.io/kafri-health-encyclopedia/",
+      "icon": "📖",
+      "note": "수산물의 특성과 활용정보",
+      "qr_poster": "qr/dictionary_poster.png",
+      "qr_mobile": "qr/dictionary_mobile.png"
+    }
+  ]
+}
