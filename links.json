@@ -1,7 +1,7 @@
 {
   "project": "KAFV 수산정보 워크스테이션",
-  "release": "v1.1",
-  "design_master": "수산_워크스테이션_정보_안내판.png · 사용자 승인 PASS",
+  "release": "v1.2",
+  "design_master": "수산정보_워크스테이션_포스터.png · 사용자 PASS 승인 (글꼴 통일된 새 이미지)",
   "date": "2026-11-07",
   "source": "User-provided GitHub Pages URLs and UI screenshots",
   "external_site_status": "제3·4·5차시 사용자 시연 화면 확인. 수산앱 5종의 라이브 연결은 배포 후 브라우저에서 재검수 필요.",
@@ -88,5 +88,5 @@
     }
   ],
   "revision_date": "2026-11-08",
-  "revision": "명칭, 제3차시 이론 시작 주소, QR 정렬, 화면 축소 시 상하 여백 수정"
+  "revision": "PASS한 새 이미지 전체 적용; 렌더된 모의 QR 8개를 정확한 URL QR로 교체; CSS 중복 글자 오버레이 제거; 카드 클릭/모바일/이론 시작 유지; 축소 시 중앙 정렬"
 }

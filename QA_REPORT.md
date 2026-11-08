@@ -1,36 +1,58 @@
-# KAFV 수산정보 워크스테이션 v1.1 수정·회귀 검수 보고서
+# 수산정보 워크스테이션 v1.2 — PASS 승인 새 이미지 반영 및 회귀검수
 
-**기준일:** 2026-11-08  |  **상태:** 로컬 제작본 검수 PASS / GitHub 게시 후 운영 PASS 보류
+- **기준 디자인:** `수산정보_워크스테이션_포스터.png` (사용자 PASS 이미지, 1672×941px)
+- **기준 배포본:** `v1.1` (기능·접속 주소 보존)
+- **제작일:** 2026-11-08
+- **판정:** 정적 제작·QR·클릭/렌더링 로컬 검수 대상. GitHub Pages 게시 후 최종 확인 필요.
 
-## 1. 변경 사항
-- 제목: 수산정보 워크스테이션
-- 부제: 교육 · 정보 · 실습 플랫폼
-- 교육 1번 카드: 실제 교육시간표에 맞춰 ‘수산물 위생·안전관리의 이해’로 수정
-- 교육 1번 클릭·QR 링크: `?step=theory`로 변경하여 이론부터 시작
-- 수산 정보 카드 5종: ‘AI’, ‘앱’ 접미사 삭제(대상 서비스 자체의 명칭·소스 변경 없음)
-- QR 각 카드 내부 정렬 및 검은 테두리 잔상 제거, 원본 승인 MASTER 보존
-- 브라우저 축소·대형 화면에서 상단 밀착을 줄이고 세로 중앙 배치
-- 로고: 승인 MASTER에 이미 포함된 KAFV 물고기·파도 그래픽 유지(별도의 새 마크 파일은 배포본에 추가하지 않음)
+## 적용 범위
+1. PASS한 새 이미지의 모든 제목·상세 문구·마크·일러스트를 원본으로 사용한다.
+2. 이미지 안에 그려진 비기능성 QR 패턴 **8곳만** 실제 URL로 인코딩한 QR로 치환했다.
+3. 기존 CSS/SVG 문자 덧씌우기 방식을 제거하여 글자 굵기·해상도 불일치가 발생하지 않게 했다.
+4. 8개 카드 전체에 해당 주소의 투명 클릭 영역을 연결했다. 새 탭으로 열린다.
+5. 제3차시 `?step=theory`를 유지하여 이론 우선 시작한다.
+6. 수산정보 5종은 `AI`·`앱` 접미사 없이 표시한다.
+7. PC 이미지·모바일 카드 별도 레이아웃 및 브라우저 축소 시 세로 중앙 배치를 유지한다.
 
-## 2. 검증 결과
+## 검수 항목
 | 검사 | 결과 |
 |---|---|
-| 카드(교육 3 + 정보 5) 수 | 8/8 |
-| PC 카드 클릭 URL과 링크 관리 파일 일치 | 8/8 |
-| 모바일 카드 클릭 URL과 링크 관리 파일 일치 | 8/8 |
-| QR 개별 원본 이미지 URL 해독 | 16/16 |
-| 최종 포스터 실제 이미지 QR 해독 | 8/8 |
-| PC·노트북·태블릿·모바일·축소 렌더링 | 5종 |
-| 내부 정적 이미지 참조 누락 | 0건 |
-| 브라우저 스크립트 예외 | 0건 |
-| ZIP 무결성 | 별도 검사 |
+| 승인 이미지 원본 대조 | QR 8개 영역 외 변경 픽셀 **0개** |
+| 교육교재 3 + 수산정보 5 | 8/8 존재 |
+| PC 카드 클릭 ↔ links.json | 8/8 정확히 일치 |
+| 모바일 카드 클릭 ↔ links.json | 8/8 정확히 일치 |
+| 개별 QR 파일 실제 디코딩 | 16/16 정확히 URL과 일치 |
+| 완성 포스터 내 QR 크롭 디코딩 | 8/8 정확히 URL과 일치 |
+| 제3차시 이론 진입 | `?step=theory` 연결 유지 (온라인 서버 화면은 재확인 필요) |
+| 브라우저 크기별 렌더링 | 5/5 PASS — desktop 1672×1000, laptop 1366×768, zoomout 2300×1200, tablet 900×1120, mobile 390×844 |
+| ZIP 무결성 | ZIP 검수 PASS — 파일 CRC 및 테스트 결과 확인 |
 
-## 3. 제한 및 최종 운영 검수
-- `?step=theory`는 기존 제3차시 성공본 코드의 진입 조건에서 확인함. 공개 GitHub 배포 갱신 후 실제 화면 진입을 재확인해야 함.
-- 수산 정보 5종은 QR과 클릭에 연결한 URL의 문자열 일치성을 검증함. 실서비스 가동 및 개별 기능 검수는 배포 후 진행 필요.
-- GitHub Pages 서버에 v1.1 배포되기 전의 로컬 검수 결과이며, MASTER/LOCK은 배포 후 최종 승인 시 판정.
+## 유의점
+- QR에 인코딩된 URL과 외부 사이트의 실제 접속 가능 여부는 서로 다르다. 수산 정보 서비스 5종의 정상 접속·내부 작동은 사용자의 GitHub Pages 공개 환경에서 최종 확인해야 한다.
+- 이미 공개한 `v1.1`의 `README.md`의 저작권 고지는 유지한다.
+- 이 버전은 GitHub 저장소 `kafv-fisheries-workstation`의 기존 루트 파일을 교체하는 배포본이다. **압축 파일 자체가 아닌 내부 파일 전체**를 업로드한다.
 
-## 4. 배포 파일 보존 규칙
-- `assets/MASTER_approved_workstation.png` 원본과 기존 GitHub 배포본은 보존함.
-- `index.html`, `links.json`, `qr/`, `assets/`, `README.md`, `QA_REPORT.md`, `.nojekyll`을 GitHub 저장소 루트에 업로드/갱신.
-- 배포 후 QR 8종과 클릭 8종, 제3차시 이론 시작, 화면 크기별 표시를 점검.
+## QR 매핑
+- `marketing`: PASS — https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory
+- `quality`: PASS — https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/
+- `customer`: PASS — https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/
+- `tourism`: PASS — https://jongcheon-kim.github.io/kafv-fishing-village-tourism/
+- `company`: PASS — https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/
+- `price`: PASS — https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/
+- `direct`: PASS — https://jongcheon-kim.github.io/fisheries-direct-payment-ai/
+- `dictionary`: PASS — https://jongcheon-kim.github.io/kafri-health-encyclopedia/
+
+## 최종 브라우저 회귀검수
+
+| 뷰포트 | 판정 | 내용 |
+|---|---|---|
+| Desktop 1672×1000 | PASS | 승인 이미지, 8개 카드 클릭 판정, 정적 이미지 로드 |
+| Laptop 1366×768 | PASS | 카드 클릭 8/8, 세로 중앙 정렬, 가로 넘침 없음 |
+| Zoom-out 유사 뷰포트 2300×1200 | PASS | 상단 밀착 방지, 가운데 정렬, 8개 클릭 판정 |
+| Tablet 900×1120 | PASS | 반응형 2열 카드, QR/이미지 8개 로드 |
+| Mobile 390×844 | PASS | 반응형 1열 카드, QR/이미지 8개 로드 |
+
+검수 방법: 브라우저 DOM 기준 `elementFromPoint` 클릭영역과 이미지 `naturalWidth`, 스크립트 예외, 가로 넘침을 검사한 뒤 실제 렌더링 이미지를 시각 검토했다. 보안 제한으로 인한 브라우저 로컬 파일 탐색 차단을 피하기 위해 검수 시에만 정적 이미지들을 `data:` URL로 대체하였으며, 배포본 자체는 정상적인 상대 경로로 유지했다.
+
+### 최종 검수 판정
+**배포용 ZIP 파일 구성: PASS / 로컬 브라우저 5종 및 QR 연결: PASS / 공개 GitHub Pages 운영 PASS: 배포 후 확인.**

@@ -1,114 +1,43 @@
 <!DOCTYPE html>
-
-<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="#07558d" name="theme-color"/><meta content="KAFV 수산정보 워크스테이션 · 교육·정보·실습 플랫폼. 수산물 교육교재 3종과 수산 전문 서비스 5종을 클릭과 QR 스캔으로 이용하세요." name="description"/>
-<title>수산정보 워크스테이션 | 한국AI어촌가치연구소 KAFV</title>
-<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;color:#0b2949;background:linear-gradient(135deg,#e0f3fa,#f1faff 45%,#e3f7f7)}
-.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
-.desktop-poster{position:relative;width:min(100%,1648px);margin:0 auto;aspect-ratio:1672/941;box-shadow:0 18px 55px #063f6b2d;background:#fff}
-.master{display:block;width:100%;height:100%;object-fit:contain;user-select:none}
-.poster-hotspot{position:absolute;display:block;border:2px solid transparent;border-radius:15px;outline-offset:0;transition:background .15s ease,border-color .15s ease;cursor:pointer}
-.poster-hotspot:hover,.poster-hotspot:focus-visible{border-color:#1bd8e2;background:rgba(17,170,190,.07);box-shadow:0 0 0 3px #ffffffb5;outline:0}
-.poster-hotspot:active{background:rgba(17,170,190,.16)}.poster-qr{position:absolute;display:block;object-fit:fill;background:white;image-rendering:pixelated;pointer-events:none;user-select:none}
-.mobile-layout{display:none}a{text-decoration:none;color:inherit}
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07558d">
+<meta name="description" content="수산정보 워크스테이션: 교육·정보·실습 플랫폼. 교육교재 3종과 수산정보 5종을 QR 또는 클릭으로 이용하세요.">
+<title>수산정보 워크스테이션 | KAFV</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#0a294b;font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;background:linear-gradient(125deg,#dfedf7 0%,#eefbff 45%,#e6f5f9 100%)}
+a{text-decoration:none;color:inherit}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+main{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:clamp(20px,3vh,50px) 0}
+.desktop-poster{position:relative;width:min(96vw,1672px,calc((100dvh - 54px) * 1.77683));aspect-ratio:1672 / 941;box-shadow:0 17px 58px #043c7135;background:#fff;flex:0 0 auto}
+.desktop-poster>img.master{display:block;width:100%;height:100%;object-fit:contain;user-select:none;pointer-events:none}
+.poster-hotspot{display:block;position:absolute;z-index:2;border:2px solid transparent;border-radius:14px;cursor:pointer;transition:border-color .15s ease,background-color .15s ease,box-shadow .15s ease}
+.poster-hotspot:hover,.poster-hotspot:focus-visible{border-color:#19c9dc;background:#28c5cb11;box-shadow:0 0 0 3px #fff9;outline:none}
+.poster-hotspot:active{background:#2dd0df33}
+.mobile-layout{display:none;width:100%}
 .mobile-hero{background:linear-gradient(104deg,#062d55 0%,#07508c 65%,#1278a3 100%);color:#fff;position:relative;overflow:hidden;padding:32px 20px 30px;text-align:center}
 .mobile-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06274acc 0%,#052b477b 55%,transparent 100%),url('assets/mobile_ocean_header.png') right center/auto 100% no-repeat;opacity:.8}
 .mobile-hero>*{position:relative}.mobile-fish{font-size:28px}.mobile-hero h1{font-size:clamp(26px,4.7vw,40px);letter-spacing:-.06em;line-height:1.2;margin:8px 0}.mobile-hero p{font-size:14px;font-weight:700;margin:9px 0 0;color:#e9f9ff}
 .mobile-wrap{padding:18px clamp(14px,4vw,32px) 30px;max-width:1000px;margin:auto}
 .mobile-section{background:#fff;border-radius:20px;padding:16px 14px 19px;margin:0 0 18px;box-shadow:0 7px 24px #1b66801c;border:1px solid #c5e4ee}
-.mobile-section-header{background:linear-gradient(100deg,#053877,#1379c3,#7cdaed);color:white;display:flex;align-items:center;gap:9px;border-radius:12px;font-size:22px;font-weight:900;padding:9px 15px;margin-bottom:13px}
+.mobile-section-header{background:linear-gradient(100deg,#053877,#1379c3,#7cdaed);color:#fff;display:flex;align-items:center;gap:9px;border-radius:12px;font-size:22px;font-weight:900;padding:9px 15px;margin-bottom:13px}
 .mobile-section.app .mobile-section-header{background:linear-gradient(100deg,#005c68,#11a5ae,#97e7de)}
 .mobile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .mobile-card{display:flex;align-items:center;gap:12px;min-height:150px;min-width:0;padding:12px;background:linear-gradient(160deg,#fff 50%,#e1fafb);border:1px solid #b1dbea;border-radius:15px;box-shadow:0 3px 9px #144f6716;transition:transform .14s ease,border .14s ease}
 .mobile-card:hover,.mobile-card:focus-visible{transform:translateY(-2px);border-color:#2ac3d1;outline:2px solid #1897ae;outline-offset:1px}
-.mobile-qr{display:block;width:122px;height:122px;max-width:38%;object-fit:contain;image-rendering:pixelated;flex:0 0 auto;background:white;border-radius:4px}
+.mobile-qr{display:block;width:122px;height:122px;max-width:38%;object-fit:contain;image-rendering:pixelated;flex:0 0 auto;background:#fff;border-radius:4px}
 .mobile-card-body{min-width:0}.mobile-icon{font-size:26px;line-height:1}.mobile-card h3{font-size:clamp(15px,2vw,19px);line-height:1.35;margin:5px 0;font-weight:900;word-break:keep-all}.mobile-card p{font-size:12px;color:#456d7a;margin:0 0 8px;line-height:1.45}.mobile-action{display:inline-block;font-size:12px;font-weight:800;color:#007a92;border-bottom:2px solid #19c4cd}
 .mobile-footer{background:#063d76;color:#e4f9ff;text-align:center;font-size:13px;font-weight:750;padding:18px}
-@media(max-width:1120px){.desktop-poster{display:none}.mobile-layout{display:block}}
+@media(max-width:1120px){main{display:block;padding:0;min-height:100dvh}.desktop-poster{display:none}.mobile-layout{display:block;max-width:1220px;margin:0 auto}}
 @media(max-width:630px){.mobile-grid{grid-template-columns:1fr}.mobile-card{min-height:130px}.mobile-qr{width:126px;height:126px;max-width:38%}.mobile-wrap{padding:14px 12px 24px}.mobile-section{border-radius:16px;padding:12px 10px 15px}.mobile-card h3{font-size:17px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-/* v1.1 | approved poster preserved; only label/QR presentation and vertical centering improved */
-.desktop-poster{box-shadow:0 18px 55px #063f6b2d}
-.poster-copy-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:visible}
-.poster-hotspot{z-index:3;border-radius:16px;overflow:hidden;}
-.poster-hotspot:hover,.poster-hotspot:focus-visible{overflow:hidden}
-.poster-qr{box-sizing:border-box;object-fit:contain!important;image-rendering:pixelated;background:#fff!important;border:3px solid #fff;border-radius:1px;}
-@media(min-width:1121px){main{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:clamp(20px,3.5vh,44px) 0;} .desktop-poster{margin:auto;}}
-@media(max-width:1120px){main{display:block;} .mobile-layout{max-width:1220px;margin:0 auto;}}
-</style></head>
-<body>
-<main>
-<!-- Approved visual MASTER for desktop; functional QR overlays replace the rendered mockup QR codes. -->
-<div aria-label="KAFV 수산정보 워크스테이션: 교육 교재 3종과 수산 정보 5종" class="desktop-poster">
-<img alt="수산정보 워크스테이션: 교육교재 3종과 수산정보 5종 QR 통합 안내" class="master" draggable="false" height="941" src="assets/MASTER_approved_workstation.png" width="1672"/><svg aria-hidden="true" class="poster-copy-overlay" preserveaspectratio="xMidYMid meet" viewbox="0 0 1672 941" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<lineargradient id="headerMask" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#003a73"></stop><stop offset="0.66" stop-color="#013a73"></stop><stop offset="1" stop-color="#0b62a3"></stop></lineargradient>
-<lineargradient id="sectionMask" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#006572"></stop><stop offset="1" stop-color="#099d9d"></stop></lineargradient>
-<lineargradient id="whiteMask" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#f5fcfd"></stop></lineargradient>
-</defs>
-<!-- Exact white backplates hide the old mockup QR edges before the functional codes are overlaid. -->
-<g fill="#ffffff">
-<rect height="173" width="174" x="63" y="282"></rect>
-<rect height="173" width="179" x="584" y="282"></rect>
-<rect height="173" width="174" x="1102" y="282"></rect>
-<rect height="141" width="194" x="115" y="569"></rect>
-<rect height="141" width="199" x="426" y="569"></rect>
-<rect height="141" width="198" x="737" y="569"></rect>
-<rect height="141" width="199" x="1043" y="569"></rect>
-<rect height="141" width="197" x="1354" y="569"></rect>
-</g>
-<!-- original heading covered with matching ocean-blue gradient: fish mark and sea remain visible -->
-<rect fill="url(#headerMask)" height="75" rx="8" width="653" x="549" y="13"></rect>
-<text fill="white" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="63" font-weight="900" letter-spacing="-2" text-anchor="middle" x="874" y="77">수산정보 워크스테이션</text>
-<!-- text only inside the approved pale pill -->
-<rect fill="#f4fbff" height="37" rx="8" width="451" x="610" y="106"></rect>
-<text fill="#0a2c54" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="28" font-weight="900" text-anchor="middle" x="835" y="136">교육 · 정보 · 실습 플랫폼</text>
-<!-- accurate hygiene lesson title, from original syllabus -->
-<rect fill="url(#whiteMask)" height="90" rx="4" width="186" x="254" y="308"></rect>
-<text fill="#0b2a55" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" font-weight="900" text-anchor="start" x="259" y="334">
-<tspan dy="0" x="259">수산물 위생·</tspan><tspan dy="27" x="259">안전관리의</tspan><tspan dy="27" x="259">이해</tspan>
-</text>
-<!-- remove '앱' from section title -->
-<rect fill="url(#sectionMask)" height="44" width="220" x="136" y="499"></rect>
-<text fill="#ffffff" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="35" font-weight="900" x="141" y="535">수산 정보</text>
-<!-- remove '앱' and 'AI' from five resource card labels -->
-<rect fill="#ffffff" height="41" width="195" x="107" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="203" y="738">어촌관광정보</text>
-<rect fill="#ffffff" height="41" width="219" x="407" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="517" y="738">수산기업정보</text>
-<rect fill="#ffffff" height="41" width="252" x="695" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" font-weight="900" text-anchor="middle" x="823" y="738">수산물 가격정보</text>
-<rect fill="#ffffff" height="41" width="239" x="1014" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="1133" y="738">수산자원직불제</text>
-</svg>
-<a aria-label="수산물 위생·안전관리의 이해 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory" rel="noopener noreferrer" style="left:3.03398%;top:29.31034%;width:30.70388%;height:20.79741%" target="_blank" title="수산물 위생·안전관리의 이해 열기">
-<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/marketing_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
-<span class="sr-only">수산물 위생·안전관리의 이해</span>
-</a>
-<a aria-label="수산물 품질·유통관리 온라인 교재 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" rel="noopener noreferrer" style="left:34.76942%;top:29.31034%;width:30.70388%;height:20.79741%" target="_blank" title="수산물 품질·유통관리 온라인 교재 열기">
-<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/quality_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
-<span class="sr-only">수산물 품질·유통관리 온라인 교재</span>
-</a>
-<a aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" rel="noopener noreferrer" style="left:66.44417%;top:29.31034%;width:30.58252%;height:20.79741%" target="_blank" title="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기">
-<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/customer_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
-<span class="sr-only">고객응대·판매서비스 및 클레임 관리 온라인 교재</span>
-</a>
-<a aria-label="어촌관광정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" rel="noopener noreferrer" style="left:3.09466%;top:60.23707%;width:18.50728%;height:31.14224%" target="_blank" title="어촌관광정보 열기">
-<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/tourism_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
-<span class="sr-only">어촌관광정보</span>
-</a>
-<a aria-label="수산기업정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" rel="noopener noreferrer" style="left:22.26942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산기업정보 열기">
-<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/company_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
-<span class="sr-only">수산기업정보</span>
-</a>
-<a aria-label="수산물 가격정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" rel="noopener noreferrer" style="left:41.01942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산물 가격정보 열기">
-<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/price_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
-<span class="sr-only">수산물 가격정보</span>
-</a>
-<a aria-label="수산자원직불제 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" rel="noopener noreferrer" style="left:59.76942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산자원직불제 열기">
-<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/direct_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
-<span class="sr-only">수산자원직불제</span>
-</a>
-<a aria-label="수산물사전 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" rel="noopener noreferrer" style="left:78.58010%;top:60.23707%;width:18.38592%;height:31.14224%" target="_blank" title="수산물사전 열기">
-<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/dictionary_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
-<span class="sr-only">수산물사전</span>
-</a>
+</style>
+</head><body><main>
+<div class="desktop-poster" role="region" aria-label="수산정보 워크스테이션: 교육교재 3종, 수산정보 5종">
+<img src="assets/MASTER_approved_workstation.png" class="master" width="1672" height="941" draggable="false" alt="수산정보 워크스테이션. 교육·정보·실습 플랫폼. QR 8종이 담긴 승인 디자인." />
+<a class="poster-hotspot" style="left:3.76794%;top:29.75558%;width:29.72488%;height:18.91605%" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory" target="_blank" rel="noopener noreferrer" aria-label="수산물 위생·안전관리의 이해 새 탭에서 열기" title="수산물 위생·안전관리의 이해 열기"><span class="sr-only">수산물 위생·안전관리의 이해</span></a><a class="poster-hotspot" style="left:34.50957%;top:29.75558%;width:29.78469%;height:18.91605%" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" target="_blank" rel="noopener noreferrer" aria-label="수산물 품질·유통관리 온라인 교재 새 탭에서 열기" title="수산물 품질·유통관리 온라인 교재 열기"><span class="sr-only">수산물 품질·유통관리 온라인 교재</span></a><a class="poster-hotspot" style="left:65.25120%;top:29.75558%;width:29.54545%;height:18.91605%" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" target="_blank" rel="noopener noreferrer" aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 새 탭에서 열기" title="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기"><span class="sr-only">고객응대·판매서비스 및 클레임 관리 온라인 교재</span></a><a class="poster-hotspot" style="left:3.82775%;top:58.02338%;width:18.12201%;height:29.54304%" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" target="_blank" rel="noopener noreferrer" aria-label="어촌관광정보 새 탭에서 열기" title="어촌관광정보 열기"><span class="sr-only">어촌관광정보</span></a><a class="poster-hotspot" style="left:22.60766%;top:58.02338%;width:17.46411%;height:29.54304%" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" target="_blank" rel="noopener noreferrer" aria-label="수산기업정보 새 탭에서 열기" title="수산기업정보 열기"><span class="sr-only">수산기업정보</span></a><a class="poster-hotspot" style="left:40.66986%;top:58.02338%;width:17.40431%;height:29.54304%" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" target="_blank" rel="noopener noreferrer" aria-label="수산물 가격정보 새 탭에서 열기" title="수산물 가격정보 열기"><span class="sr-only">수산물 가격정보</span></a><a class="poster-hotspot" style="left:58.61244%;top:58.02338%;width:17.58373%;height:29.54304%" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" target="_blank" rel="noopener noreferrer" aria-label="수산자원직불제 새 탭에서 열기" title="수산자원직불제 열기"><span class="sr-only">수산자원직불제</span></a><a class="poster-hotspot" style="left:76.73445%;top:58.02338%;width:18.06220%;height:29.54304%" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" target="_blank" rel="noopener noreferrer" aria-label="수산물사전 새 탭에서 열기" title="수산물사전 열기"><span class="sr-only">수산물사전</span></a>
 </div>
 <div class="mobile-layout">
 <header class="mobile-hero"><div aria-hidden="true" class="mobile-fish">🐟</div><h1>수산정보 워크스테이션</h1><p>교육 · 정보 · 실습 플랫폼</p><p>QR 스캔 또는 카드를 눌러 바로 접속하세요</p></header>
@@ -146,5 +75,4 @@
 </a></div></section></div>
 <footer class="mobile-footer">한국AI어촌가치연구소 KAFV</footer>
 </div>
-</main>
-</body></html>
+</main></body></html>
