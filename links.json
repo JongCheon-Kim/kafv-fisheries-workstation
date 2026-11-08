@@ -1,6 +1,6 @@
 {
-  "project": "KAFV 수산 워크스테이션",
-  "release": "v1.0",
+  "project": "KAFV 수산정보 워크스테이션",
+  "release": "v1.1",
   "design_master": "수산_워크스테이션_정보_안내판.png · 사용자 승인 PASS",
   "date": "2026-11-07",
   "source": "User-provided GitHub Pages URLs and UI screenshots",
@@ -9,10 +9,10 @@
     {
       "id": "marketing",
       "category": "education",
-      "label": "수산물 마케팅 온라인 교재",
-      "url": "https://jongcheon-kim.github.io/kafv-fishing-village-consultant/",
-      "icon": "📣",
-      "note": "수산물 마케팅의 기초와 현장 적용",
+      "label": "수산물 위생·안전관리의 이해",
+      "url": "https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory",
+      "icon": "🛡️",
+      "note": "수산물 위생·안전관리의 이해 · 이론 화면 시작",
       "qr_poster": "qr/marketing_poster.png",
       "qr_mobile": "qr/marketing_mobile.png"
     },
@@ -39,7 +39,7 @@
     {
       "id": "tourism",
       "category": "app",
-      "label": "어촌관광정보 앱",
+      "label": "어촌관광정보",
       "url": "https://jongcheon-kim.github.io/kafv-fishing-village-tourism/",
       "icon": "🧭",
       "note": "어촌 및 주변 관광정보",
@@ -49,7 +49,7 @@
     {
       "id": "company",
       "category": "app",
-      "label": "수산기업정보 AI",
+      "label": "수산기업정보",
       "url": "https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/",
       "icon": "🏢",
       "note": "수산기업 및 산업정보",
@@ -59,7 +59,7 @@
     {
       "id": "price",
       "category": "app",
-      "label": "수산물 가격정보 AI",
+      "label": "수산물 가격정보",
       "url": "https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/",
       "icon": "📈",
       "note": "시장·가격 정보 검색",
@@ -69,7 +69,7 @@
     {
       "id": "direct",
       "category": "app",
-      "label": "수산자원직불제 AI",
+      "label": "수산자원직불제",
       "url": "https://jongcheon-kim.github.io/fisheries-direct-payment-ai/",
       "icon": "🐟",
       "note": "직불제 신청 및 제도 안내",
@@ -86,5 +86,7 @@
       "qr_poster": "qr/dictionary_poster.png",
       "qr_mobile": "qr/dictionary_mobile.png"
     }
-  ]
+  ],
+  "revision_date": "2026-11-08",
+  "revision": "명칭, 제3차시 이론 시작 주소, QR 정렬, 화면 축소 시 상하 여백 수정"
 }

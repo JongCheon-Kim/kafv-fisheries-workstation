@@ -1,7 +1,8 @@
-<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07558d"><meta name="description" content="KAFV 수산 워크스테이션: 수산물 교육교재 3종과 수산 전문 앱 5종. QR 스캔과 카드 클릭으로 접속합니다.">
-<title>KAFV 수산 워크스테이션 | 한국AI어촌가치연구소</title>
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#07558d" name="theme-color"/><meta content="KAFV 수산정보 워크스테이션 · 교육·정보·실습 플랫폼. 수산물 교육교재 3종과 수산 전문 서비스 5종을 클릭과 QR 스캔으로 이용하세요." name="description"/>
+<title>수산정보 워크스테이션 | 한국AI어촌가치연구소 KAFV</title>
 <style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;color:#0b2949;background:linear-gradient(135deg,#e0f3fa,#f1faff 45%,#e3f7f7)}
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .desktop-poster{position:relative;width:min(100%,1648px);margin:0 auto;aspect-ratio:1672/941;box-shadow:0 18px 55px #063f6b2d;background:#fff}
@@ -25,80 +26,125 @@
 .mobile-footer{background:#063d76;color:#e4f9ff;text-align:center;font-size:13px;font-weight:750;padding:18px}
 @media(max-width:1120px){.desktop-poster{display:none}.mobile-layout{display:block}}
 @media(max-width:630px){.mobile-grid{grid-template-columns:1fr}.mobile-card{min-height:130px}.mobile-qr{width:126px;height:126px;max-width:38%}.mobile-wrap{padding:14px 12px 24px}.mobile-section{border-radius:16px;padding:12px 10px 15px}.mobile-card h3{font-size:17px}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}</style></head>
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* v1.1 | approved poster preserved; only label/QR presentation and vertical centering improved */
+.desktop-poster{box-shadow:0 18px 55px #063f6b2d}
+.poster-copy-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:visible}
+.poster-hotspot{z-index:3;border-radius:16px;overflow:hidden;}
+.poster-hotspot:hover,.poster-hotspot:focus-visible{overflow:hidden}
+.poster-qr{box-sizing:border-box;object-fit:contain!important;image-rendering:pixelated;background:#fff!important;border:3px solid #fff;border-radius:1px;}
+@media(min-width:1121px){main{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:clamp(20px,3.5vh,44px) 0;} .desktop-poster{margin:auto;}}
+@media(max-width:1120px){main{display:block;} .mobile-layout{max-width:1220px;margin:0 auto;}}
+</style></head>
 <body>
 <main>
-  <!-- Approved visual MASTER for desktop; functional QR overlays replace the rendered mockup QR codes. -->
-  <div class="desktop-poster" aria-label="KAFV 수산 워크스테이션: 교육 교재 3종과 수산 정보 앱 5종">
-     <img class="master" src="assets/MASTER_approved_workstation.png" width="1672" height="941" alt="수산 워크스테이션: 교육교재 3종과 수산정보 앱 5종 QR 통합 안내" draggable="false">
-     <a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/" target="_blank" rel="noopener noreferrer" title="수산물 마케팅 온라인 교재 열기" aria-label="수산물 마케팅 온라인 교재 열기 (새 탭)" style="left:3.03398%;top:29.31034%;width:30.70388%;height:20.79741%">
-        <img class="poster-qr" src="qr/marketing_poster.png" width="148" height="148" alt="" loading="eager" draggable="false" style="left:4.54545%;top:11.39896%;width:29.24901%;height:76.68394%">
-        <span class="sr-only">수산물 마케팅 온라인 교재</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" target="_blank" rel="noopener noreferrer" title="수산물 품질·유통관리 온라인 교재 열기" aria-label="수산물 품질·유통관리 온라인 교재 열기 (새 탭)" style="left:34.76942%;top:29.31034%;width:30.70388%;height:20.79741%">
-        <img class="poster-qr" src="qr/quality_poster.png" width="148" height="148" alt="" loading="eager" draggable="false" style="left:4.54545%;top:11.39896%;width:29.24901%;height:76.68394%">
-        <span class="sr-only">수산물 품질·유통관리 온라인 교재</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" target="_blank" rel="noopener noreferrer" title="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기" aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기 (새 탭)" style="left:66.44417%;top:29.31034%;width:30.58252%;height:20.79741%">
-        <img class="poster-qr" src="qr/customer_poster.png" width="148" height="148" alt="" loading="eager" draggable="false" style="left:3.76984%;top:11.39896%;width:29.36508%;height:76.68394%">
-        <span class="sr-only">고객응대·판매서비스 및 클레임 관리 온라인 교재</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" target="_blank" rel="noopener noreferrer" title="어촌관광정보 앱 열기" aria-label="어촌관광정보 앱 열기 (새 탭)" style="left:3.09466%;top:60.23707%;width:18.50728%;height:31.14224%">
-        <img class="poster-qr" src="qr/tourism_poster.png" width="128" height="128" alt="" loading="eager" draggable="false" style="left:28.85246%;top:6.22837%;width:41.96721%;height:44.29066%">
-        <span class="sr-only">어촌관광정보 앱</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" target="_blank" rel="noopener noreferrer" title="수산기업정보 AI 열기" aria-label="수산기업정보 AI 열기 (새 탭)" style="left:22.26942%;top:60.23707%;width:18.14320%;height:31.14224%">
-        <img class="poster-qr" src="qr/company_poster.png" width="128" height="128" alt="" loading="eager" draggable="false" style="left:29.09699%;top:6.22837%;width:42.80936%;height:44.29066%">
-        <span class="sr-only">수산기업정보 AI</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" target="_blank" rel="noopener noreferrer" title="수산물 가격정보 AI 열기" aria-label="수산물 가격정보 AI 열기 (새 탭)" style="left:41.01942%;top:60.23707%;width:18.14320%;height:31.14224%">
-        <img class="poster-qr" src="qr/price_poster.png" width="128" height="128" alt="" loading="eager" draggable="false" style="left:29.09699%;top:6.22837%;width:42.80936%;height:44.29066%">
-        <span class="sr-only">수산물 가격정보 AI</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" target="_blank" rel="noopener noreferrer" title="수산자원직불제 AI 열기" aria-label="수산자원직불제 AI 열기 (새 탭)" style="left:59.76942%;top:60.23707%;width:18.14320%;height:31.14224%">
-        <img class="poster-qr" src="qr/direct_poster.png" width="128" height="128" alt="" loading="eager" draggable="false" style="left:27.75920%;top:6.22837%;width:42.80936%;height:44.29066%">
-        <span class="sr-only">수산자원직불제 AI</span>
-    </a>
-<a class="poster-hotspot" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" target="_blank" rel="noopener noreferrer" title="수산물사전 열기" aria-label="수산물사전 열기 (새 탭)" style="left:78.58010%;top:60.23707%;width:18.38592%;height:31.14224%">
-        <img class="poster-qr" src="qr/dictionary_poster.png" width="128" height="128" alt="" loading="eager" draggable="false" style="left:27.39274%;top:6.22837%;width:42.24422%;height:44.29066%">
-        <span class="sr-only">수산물사전</span>
-    </a>
-  </div>
-  <div class="mobile-layout">
-    <header class="mobile-hero"><div class="mobile-fish" aria-hidden="true">🐟</div><h1>수산 워크스테이션</h1><p>교육 교재 · 수산 정보 · 실습 플랫폼</p><p>QR 스캔 또는 카드를 눌러 바로 접속하세요</p></header>
-    <div class="mobile-wrap"><section class="mobile-section" aria-labelledby="edu-title"><h2 class="mobile-section-header" id="edu-title">🎓 교육 교재</h2><div class="mobile-grid"><a class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/" target="_blank" rel="noopener noreferrer" aria-label="수산물 마케팅 온라인 교재 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/marketing_mobile.png" alt="수산물 마케팅 온라인 교재 QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">📣</div><h3>수산물 마케팅 온라인 교재</h3><p>수산물 마케팅의 기초와 현장 적용</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" target="_blank" rel="noopener noreferrer" aria-label="수산물 품질·유통관리 온라인 교재 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/quality_mobile.png" alt="수산물 품질·유통관리 온라인 교재 QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">📋</div><h3>수산물 품질·유통관리 온라인 교재</h3><p>품질·입고·저온 유통을 배우는 교재</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" target="_blank" rel="noopener noreferrer" aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/customer_mobile.png" alt="고객응대·판매서비스 및 클레임 관리 온라인 교재 QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">🎮</div><h3>고객응대·판매서비스 및 클레임 관리 온라인 교재</h3><p>고객응대와 판매를 체험하는 RPG 교재</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a></div></section>
-    <section class="mobile-section app" aria-labelledby="app-title"><h2 class="mobile-section-header" id="app-title">📱 수산 정보 앱</h2><div class="mobile-grid"><a class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" target="_blank" rel="noopener noreferrer" aria-label="어촌관광정보 앱 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/tourism_mobile.png" alt="어촌관광정보 앱 QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">🧭</div><h3>어촌관광정보 앱</h3><p>어촌 및 주변 관광정보</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" target="_blank" rel="noopener noreferrer" aria-label="수산기업정보 AI 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/company_mobile.png" alt="수산기업정보 AI QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">🏢</div><h3>수산기업정보 AI</h3><p>수산기업 및 산업정보</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" target="_blank" rel="noopener noreferrer" aria-label="수산물 가격정보 AI 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/price_mobile.png" alt="수산물 가격정보 AI QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">📈</div><h3>수산물 가격정보 AI</h3><p>시장·가격 정보 검색</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" target="_blank" rel="noopener noreferrer" aria-label="수산자원직불제 AI 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/direct_mobile.png" alt="수산자원직불제 AI QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">🐟</div><h3>수산자원직불제 AI</h3><p>직불제 신청 및 제도 안내</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a>
-<a class="mobile-card" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" target="_blank" rel="noopener noreferrer" aria-label="수산물사전 열기 (새 탭)">
-      <img class="mobile-qr" src="qr/dictionary_mobile.png" alt="수산물사전 QR코드" loading="lazy" width="156" height="156">
-      <div class="mobile-card-body"><div class="mobile-icon" aria-hidden="true">📖</div><h3>수산물사전</h3><p>수산물의 특성과 활용정보</p><span class="mobile-action">교재·앱 열기 <span aria-hidden="true">↗</span></span></div>
-    </a></div></section></div>
-    <footer class="mobile-footer">한국AI어촌가치연구소 KAFV</footer>
-  </div>
+<!-- Approved visual MASTER for desktop; functional QR overlays replace the rendered mockup QR codes. -->
+<div aria-label="KAFV 수산정보 워크스테이션: 교육 교재 3종과 수산 정보 5종" class="desktop-poster">
+<img alt="수산정보 워크스테이션: 교육교재 3종과 수산정보 5종 QR 통합 안내" class="master" draggable="false" height="941" src="assets/MASTER_approved_workstation.png" width="1672"/><svg aria-hidden="true" class="poster-copy-overlay" preserveaspectratio="xMidYMid meet" viewbox="0 0 1672 941" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="headerMask" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#003a73"></stop><stop offset="0.66" stop-color="#013a73"></stop><stop offset="1" stop-color="#0b62a3"></stop></lineargradient>
+<lineargradient id="sectionMask" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#006572"></stop><stop offset="1" stop-color="#099d9d"></stop></lineargradient>
+<lineargradient id="whiteMask" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"></stop><stop offset="1" stop-color="#f5fcfd"></stop></lineargradient>
+</defs>
+<!-- Exact white backplates hide the old mockup QR edges before the functional codes are overlaid. -->
+<g fill="#ffffff">
+<rect height="173" width="174" x="63" y="282"></rect>
+<rect height="173" width="179" x="584" y="282"></rect>
+<rect height="173" width="174" x="1102" y="282"></rect>
+<rect height="141" width="194" x="115" y="569"></rect>
+<rect height="141" width="199" x="426" y="569"></rect>
+<rect height="141" width="198" x="737" y="569"></rect>
+<rect height="141" width="199" x="1043" y="569"></rect>
+<rect height="141" width="197" x="1354" y="569"></rect>
+</g>
+<!-- original heading covered with matching ocean-blue gradient: fish mark and sea remain visible -->
+<rect fill="url(#headerMask)" height="75" rx="8" width="653" x="549" y="13"></rect>
+<text fill="white" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="63" font-weight="900" letter-spacing="-2" text-anchor="middle" x="874" y="77">수산정보 워크스테이션</text>
+<!-- text only inside the approved pale pill -->
+<rect fill="#f4fbff" height="37" rx="8" width="451" x="610" y="106"></rect>
+<text fill="#0a2c54" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="28" font-weight="900" text-anchor="middle" x="835" y="136">교육 · 정보 · 실습 플랫폼</text>
+<!-- accurate hygiene lesson title, from original syllabus -->
+<rect fill="url(#whiteMask)" height="90" rx="4" width="186" x="254" y="308"></rect>
+<text fill="#0b2a55" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" font-weight="900" text-anchor="start" x="259" y="334">
+<tspan dy="0" x="259">수산물 위생·</tspan><tspan dy="27" x="259">안전관리의</tspan><tspan dy="27" x="259">이해</tspan>
+</text>
+<!-- remove '앱' from section title -->
+<rect fill="url(#sectionMask)" height="44" width="220" x="136" y="499"></rect>
+<text fill="#ffffff" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="35" font-weight="900" x="141" y="535">수산 정보</text>
+<!-- remove '앱' and 'AI' from five resource card labels -->
+<rect fill="#ffffff" height="41" width="195" x="107" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="203" y="738">어촌관광정보</text>
+<rect fill="#ffffff" height="41" width="219" x="407" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="517" y="738">수산기업정보</text>
+<rect fill="#ffffff" height="41" width="252" x="695" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="25" font-weight="900" text-anchor="middle" x="823" y="738">수산물 가격정보</text>
+<rect fill="#ffffff" height="41" width="239" x="1014" y="707"></rect><text fill="#092951" font-family="Noto Sans CJK KR,Malgun Gothic,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="1133" y="738">수산자원직불제</text>
+</svg>
+<a aria-label="수산물 위생·안전관리의 이해 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory" rel="noopener noreferrer" style="left:3.03398%;top:29.31034%;width:30.70388%;height:20.79741%" target="_blank" title="수산물 위생·안전관리의 이해 열기">
+<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/marketing_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
+<span class="sr-only">수산물 위생·안전관리의 이해</span>
+</a>
+<a aria-label="수산물 품질·유통관리 온라인 교재 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" rel="noopener noreferrer" style="left:34.76942%;top:29.31034%;width:30.70388%;height:20.79741%" target="_blank" title="수산물 품질·유통관리 온라인 교재 열기">
+<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/quality_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
+<span class="sr-only">수산물 품질·유통관리 온라인 교재</span>
+</a>
+<a aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" rel="noopener noreferrer" style="left:66.44417%;top:29.31034%;width:30.58252%;height:20.79741%" target="_blank" title="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기">
+<img alt="" class="poster-qr" draggable="false" height="148" loading="eager" src="qr/customer_poster.png" style="left:5.4%;top:11.5%;width:27.1%;height:71.5%;" width="148"/>
+<span class="sr-only">고객응대·판매서비스 및 클레임 관리 온라인 교재</span>
+</a>
+<a aria-label="어촌관광정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" rel="noopener noreferrer" style="left:3.09466%;top:60.23707%;width:18.50728%;height:31.14224%" target="_blank" title="어촌관광정보 열기">
+<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/tourism_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
+<span class="sr-only">어촌관광정보</span>
+</a>
+<a aria-label="수산기업정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" rel="noopener noreferrer" style="left:22.26942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산기업정보 열기">
+<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/company_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
+<span class="sr-only">수산기업정보</span>
+</a>
+<a aria-label="수산물 가격정보 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" rel="noopener noreferrer" style="left:41.01942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산물 가격정보 열기">
+<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/price_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
+<span class="sr-only">수산물 가격정보</span>
+</a>
+<a aria-label="수산자원직불제 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" rel="noopener noreferrer" style="left:59.76942%;top:60.23707%;width:18.14320%;height:31.14224%" target="_blank" title="수산자원직불제 열기">
+<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/direct_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
+<span class="sr-only">수산자원직불제</span>
+</a>
+<a aria-label="수산물사전 열기 (새 탭)" class="poster-hotspot" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" rel="noopener noreferrer" style="left:78.58010%;top:60.23707%;width:18.38592%;height:31.14224%" target="_blank" title="수산물사전 열기">
+<img alt="" class="poster-qr" draggable="false" height="128" loading="eager" src="qr/dictionary_poster.png" style="left:30.5%;top:6.0%;width:38.5%;height:41.0%;" width="128"/>
+<span class="sr-only">수산물사전</span>
+</a>
+</div>
+<div class="mobile-layout">
+<header class="mobile-hero"><div aria-hidden="true" class="mobile-fish">🐟</div><h1>수산정보 워크스테이션</h1><p>교육 · 정보 · 실습 플랫폼</p><p>QR 스캔 또는 카드를 눌러 바로 접속하세요</p></header>
+<div class="mobile-wrap"><section aria-labelledby="edu-title" class="mobile-section"><h2 class="mobile-section-header" id="edu-title">🎓 교육 교재</h2><div class="mobile-grid"><a aria-label="수산물 위생·안전관리의 이해 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fishing-village-consultant/?step=theory" rel="noopener noreferrer" target="_blank">
+<img alt="수산물 위생·안전관리의 이해 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/marketing_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">🛡️</div><h3>수산물 위생·안전관리의 이해</h3><p>수산물 위생·안전관리 현장 이해 및 실습</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="수산물 품질·유통관리 온라인 교재 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafv-lesson4-fish-quality-distribution/" rel="noopener noreferrer" target="_blank">
+<img alt="수산물 품질·유통관리 온라인 교재 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/quality_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">📋</div><h3>수산물 품질·유통관리 온라인 교재</h3><p>품질·입고·저온 유통을 배우는 교재</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="고객응대·판매서비스 및 클레임 관리 온라인 교재 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafv-lesson5-seafood-customer-service-rpg/" rel="noopener noreferrer" target="_blank">
+<img alt="고객응대·판매서비스 및 클레임 관리 온라인 교재 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/customer_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">🎮</div><h3>고객응대·판매서비스 및 클레임 관리 온라인 교재</h3><p>고객응대와 판매를 체험하는 RPG 교재</p><span class="mobile-action">열기 ↗</span></div>
+</a></div></section>
+<section aria-labelledby="app-title" class="mobile-section app"><h2 class="mobile-section-header" id="app-title">📱 수산 정보</h2><div class="mobile-grid"><a aria-label="어촌관광정보 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fishing-village-tourism/" rel="noopener noreferrer" target="_blank">
+<img alt="어촌관광정보 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/tourism_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">🧭</div><h3>어촌관광정보</h3><p>어촌 및 주변 관광정보</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="수산기업정보 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/fisheries-company-info-ai-v2/" rel="noopener noreferrer" target="_blank">
+<img alt="수산기업정보 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/company_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">🏢</div><h3>수산기업정보</h3><p>수산기업 및 산업정보</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="수산물 가격정보 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafv-fish-price-ai-v4/" rel="noopener noreferrer" target="_blank">
+<img alt="수산물 가격정보 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/price_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">📈</div><h3>수산물 가격정보</h3><p>시장·가격 정보 검색</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="수산자원직불제 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/fisheries-direct-payment-ai/" rel="noopener noreferrer" target="_blank">
+<img alt="수산자원직불제 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/direct_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">🐟</div><h3>수산자원직불제</h3><p>직불제 신청 및 제도 안내</p><span class="mobile-action">열기 ↗</span></div>
+</a>
+<a aria-label="수산물사전 열기 (새 탭)" class="mobile-card" href="https://jongcheon-kim.github.io/kafri-health-encyclopedia/" rel="noopener noreferrer" target="_blank">
+<img alt="수산물사전 QR코드" class="mobile-qr" height="156" loading="lazy" src="qr/dictionary_mobile.png" width="156"/>
+<div class="mobile-card-body"><div aria-hidden="true" class="mobile-icon">📖</div><h3>수산물사전</h3><p>수산물의 특성과 활용정보</p><span class="mobile-action">열기 ↗</span></div>
+</a></div></section></div>
+<footer class="mobile-footer">한국AI어촌가치연구소 KAFV</footer>
+</div>
 </main>
 </body></html>
